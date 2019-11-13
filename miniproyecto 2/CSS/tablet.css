@@ -1,0 +1,189 @@
+/* Agregación de fuente mickye */
+@font-face{font-family: hollywood; src: url(fuentes/SFHollywoodHills.ttf)}
+@font-face{font-family: starwars; src: url(fuentes/Starjedi.ttf)}
+@font-face{font-family: deadman; src: url(fuentes/deadman.ttf)}
+
+@media(min-width: 768px){
+body{
+background-image: url(../img/fondo.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+margin:0;
+padding: 0;
+}
+
+#cabecera{
+padding-top: 0px;
+float:left;
+height: 56px;
+position: fixed;
+top:0;
+width: 100%;
+background:rgba(000,000,000,0.85);
+color: black;
+font-size: 15px;
+}
+
+#icono{
+width: 10%;
+float:left;
+padding-top: 5%;
+padding-left: 1.5%;
+height: 30px;
+width: 30px;
+}
+
+#titulo{
+float:left;
+padding-left:2%;
+font-size: 300%;
+color:white;
+font-family: hollywood;
+line-height: 200%;
+font-size: 1.7em;
+}
+
+#titulo a{
+	text-decoration: none;
+	color: white;
+}
+
+#buscador{
+border-radius: 10px;
+float:left;
+line-height: 350%;
+width: 100px;
+margin-right: 6%;
+}
+
+#buscador > input{
+border-radius: 8px;
+text-align: right;
+}
+
+#izquierda{
+float:left;
+width: 25%;
+}
+#derecha{
+float:left;
+margin-right: 1%;
+}
+
+#menu { 
+margin-top: 0%;
+text-align: center;
+width:100%;
+float: left;
+font-size: 0.6em;
+}
+
+ul, ol {
+list-style:none;/*quitar los puntos de la lista*/
+}
+
+.navegacion > li {
+float:left;
+}
+
+.navegacion li a {
+background-color:transparent;
+color:white;
+text-decoration:none;
+padding:20px 17px;
+display:block;
+font-family:hollywood;
+font-size: 150%;
+line-height: 0%;
+}
+
+.navegacion li a:hover {/*Al pasar el raton por encima cambia de color*/
+background-color:white;
+color:black;
+transition: background-color 1s;
+}
+
+#contenido{
+border-radius: 10px;
+background: linear-gradient(black,#474445);
+color: white;
+margin-top: 65px;
+margin-left: 2%;
+margin-right: 2%;
+animation-name: borde;
+animation-duration: 30s;
+border: 5px solid #DB055D;
+}
+
+#titulo2{
+padding-top: 3%;
+padding-left: 2%;
+font-size: 1.4em;
+text-align: center;
+font-family: starwars;
+}
+
+@keyframes borde {
+  from {border: 5px solid #DB055D;}
+  to {border: 5px solid #F1B80C;}
+}
+
+#texto{
+font-family: deadman;
+padding-left:2%;
+padding-top: 2%;
+font-size: 0.8em; 
+}
+
+#imags{
+text-align: center;
+}
+
+#imags img{
+float: left
+padding-left: 5%;
+padding-right: 5%;
+}
+
+#imags > #foto1{
+height: 50px;
+width: 150px;
+}
+
+#imags > #foto2{
+height: 100px;
+width: 100px;
+}
+
+#pie{
+padding-top: 0px;
+float:left;
+height: 40px;
+margin-top: 4%;
+bottom: 0;
+width: 100%;
+background:rgba(000,000,000,0.5);
+color: white;
+font-size: 0.9em;
+}
+
+footer #follow{
+padding-left: 2%;
+font-family: deadman;
+float: left;
+padding-right: 25%;
+line-height: 270%;
+}
+
+
+footer img{
+float:left;
+width: 20px;
+height: 20px;
+padding-left: 2%;
+padding-right: 1%;
+padding-top: 10px;
+}
+}

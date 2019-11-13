@@ -1,0 +1,220 @@
+@font-face{font-family: hollywood; src: url(fuentes/SFHollywoodHills.ttf)}
+@font-face{font-family: starwars; src: url(fuentes/Starjedi.ttf)}
+@font-face{font-family: deadman; src: url(fuentes/deadman.ttf)}
+
+body{
+background-image: url(../img/fondo.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+#cabecera{
+padding-top: 0px;
+float:left;
+height: 70px;
+position: fixed;
+top:0;
+width: 100%;
+background:rgba(000,000,000,0.85);
+color: black;
+font-size: 15px;
+}
+
+#icono{
+width: 10%;
+float:left;
+padding-top: 0.7%;
+padding-left: 1.5%;
+height: 60px;
+width: 60px;
+}
+
+#titulo{
+float:left;
+padding-left:2%;
+font-size: 300%;
+color:white;
+font-family: hollywood;
+line-height: 150%;
+}
+
+#titulo a{
+    text-decoration: none;
+    color: white;
+}
+
+#buscador{
+padding-left: 2%;
+border-radius: 10px;
+float:left;
+line-height: 450%;
+}
+
+#buscador > input{
+border-radius: 8px;
+text-align: right;
+}
+
+#izquierda{
+float:left;
+width: 50%;
+}
+#derecha{
+float:right;
+margin-right: 2%;
+}
+
+#menu { 
+margin-top: 0%;
+text-align: center;
+width:100%;
+float: right;
+line-height: 65%;
+}
+
+ul, ol {
+list-style:none;/*quitar los puntos de la lista*/
+}
+
+.navegacion > li {
+float:left;
+}
+
+.navegacion li a {
+background-color:transparent;
+color:white;
+text-decoration:none;
+padding:20px 17px;
+display:block;
+font-family:hollywood;
+font-size: 150%;
+}
+
+.navegacion li a:hover {/*Al pasar el raton por encima cambia de color*/
+background-color:white;
+color:black;
+transition: background-color 1s;
+}
+
+#contenido{
+border-radius: 10px;
+background: linear-gradient(black,#474445);
+color: white;
+margin-top: 10%;
+margin-left: 7%;
+margin-right: 7%;
+animation-name: borde;
+animation-duration: 30s;
+border: 5px solid #DB055D;
+}
+
+@keyframes borde {
+  from {border: 5px solid #DB055D;}
+  to {border: 5px solid #F1B80C;}
+}
+
+#subtitulo{
+margin-top: 50px;
+font-family: starwars;
+}
+
+form{
+	margin-top: 15px;
+}
+
+.tabla2 td {
+        padding: 6px;
+        font-family: deadman; 
+    }
+
+.tabla3 td {
+        padding: 6px;
+        font-family: deadman;
+    }
+input{
+    border-radius: 10px 10px 10px 10px; 
+    background-color:#D8D8D8;
+}
+
+textarea{
+font-family: deadman;
+}
+
+#testo::placeholder{
+font-style: italic;
+}
+
+fieldset{
+border-radius: 15px 15px 10px 10px;
+border-color: firebrick;
+font-family: deadman;
+}
+
+legend{
+text-align: center;
+font-style: oblique;
+}
+
+#tabla4 td{
+font-family: deadman;
+}
+
+#tabla4{
+margin-bottom: 10px;    
+}
+
+input[type="radio"]:checked{
+box-shadow:1px 1px 1px 1px yellow;
+}
+
+#terminos{
+font-family: deadman;
+}
+
+#terminos:visited{
+color: blue;
+}
+
+#terminos:link{
+color: #DB055D;
+}
+
+#terminos:active{
+color: yellow;
+}
+
+p{
+font-family: deadman;
+}
+
+#pie{
+padding-top: 0px;
+float:left;
+height: 70px;
+margin-top: 7%;
+bottom: 0;
+width: 100%;
+background:rgba(000,000,000,0.5);
+color: white;
+font-size: 2em;
+}
+
+footer #follow{
+padding-left: 4%;
+font-family: deadman;
+float: left;
+padding-right: 15%;
+line-height: 190%;
+}
+
+
+footer img{
+float:left;
+width: 50px;
+height: 50px;
+padding-left: 3%;
+padding-right: 1%;
+padding-top: 10px;
+}

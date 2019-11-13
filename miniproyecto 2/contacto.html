@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="icon" type="image/png" href="img/reproductor.png">
+	<link rel="stylesheet" type="text/css" href="CSS/contacto.css">
+</head>
+<body>
+<header id="cabecera">
+<div id="izquierda">
+	<img id="icono" src="img/icono.png">
+	<span id="titulo"><a href="index.html">MOVIE PLANET</a></span>
+	<span id="buscador"><input type="search" name="busqueda" size="25" placeholder="buscar"></span>
+</div>
+<div id="derecha">
+	<nav id="menu">
+		<ol class="navegacion">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="novedades.html">Novedades</a></li>
+			<li><a href="curiosidades.html">Curiosidades</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ol>
+	</nav>
+</div>
+</header>
+
+<div id="contenido">
+<p id="subtitulo" align="center"><strong>Complete el siguiente formulario</strong></p>
+<form action="formulario.php" method="get">
+    <table style="margin: 0 auto">
+		<tr>    
+			<td colspan="2">
+			<fieldset><legend>Datos personales</legend>
+			    <table class="tabla2">
+			        <tr>
+			            <td>Nombre:</td>
+			            <td><input type="text" name="nombre" size="20" maxlength="20"required/></td>
+			        </tr>
+			        <tr>
+			            <td>Apellidos:</td>
+			            <td><input type="text" name="apellidos" size="20" maxlength="40" required/></td>
+			    	</tr>
+			        <tr>
+			            <td>E-mail:</td>
+			            <td><input type="email" name="E-mail" size="20" maxlength="40"placeholder="@" required/></td>
+			        </tr>
+			    </table>
+			</fieldset>
+			</td>
+			<td colspan="2">    
+			<fieldset><legend>Datos de conexión</legend>
+			    <table class="tabla3">
+			        <tr>
+			            <td>Usuario:</td>
+			            <td><input type="text" name="Username" size="20" maxlength="40" required/></td>
+			        </tr>
+			        <tr>
+			            <td>Contraseña:</td>
+			            <td><input type="password" name="Contraseña" size="20" maxlength="40" required/></td>
+			        </tr>
+			        <tr>
+			            <td>Palabra de seguridad:</td>
+			            <td><input type="password" name="Palabradeseguridad" size="20" maxlength="8" required/></td>
+			        </tr>
+			    </table>
+			</fieldset>
+			</td>
+		</tr>
+	</table>
+	<center>
+		<textarea id="testo" rows="4" cols="40" placeholder="Deje su comentario"></textarea>
+	<table id="tabla4">
+		<tr><td colspan="4">Deseo recibir información acerca de:</td></tr>
+		<tr>
+			<td>Películas<input type="radio" name="peliculas"></td>
+			<td>Documentales<input type="radio" name="peliculas"></td>
+			<td>Estrenos<input type="radio" name="peliculas"></td>
+			<td>Novedades<input type="radio" name="peliculas"></td>
+		</tr>
+	</table>
+	<p>Acepto los <a id="terminos" href="#"> términos y servicios</a> del formulario&nbsp;<input type="checkbox" name="terminos"></p>
+	<p><input type="submit" value="ENVIAR"/></p>
+	<p><input type="reset" value="LIMPIAR"/></p>
+	</center>		
+</form>
+</div>
+<footer id="pie">
+	<span id="follow">¡Síguenos!:</span>
+	<a href="https://twitter.com/"><img src="img/twitter.svg"></a>
+	<a href="https://www.facebook.com/"><img src="img/facebook.svg"></a>
+	<a href="https://www.instagram.com/"><img src="img/instagram.svg"></a>
+	<a href="https://www.youtube.com/"><img src="img/youtube.svg"></a>
+</footer>
+</body>
+</html>
